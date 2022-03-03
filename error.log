@@ -1,0 +1,65 @@
+[I 2022-01-23 13:34:49.492 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2022-01-23 13:34:49.498 ServerApp] jupyterlab | extension was successfully linked.
+[W 2022-01-23 13:34:49.632 ServerApp] The module 'jupyter_nbextensions_configurator' could not be found. Are you sure the extension is installed?
+[I 2022-01-23 13:34:49.632 ServerApp] nbclassic | extension was successfully linked.
+[I 2022-01-23 13:34:49.651 ServerApp] nbclassic | extension was successfully loaded.
+[I 2022-01-23 13:34:49.663 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2022-01-23 13:34:49.709 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2022-01-23 13:34:49.709 LabApp] JupyterLab extension loaded from /Users/chaitanyaambarukhana/miniforge3/envs/tensorflow/lib/python3.9/site-packages/jupyterlab
+[I 2022-01-23 13:34:49.709 LabApp] JupyterLab application directory is /Users/chaitanyaambarukhana/miniforge3/envs/tensorflow/share/jupyter/lab
+[I 2022-01-23 13:34:49.711 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2022-01-23 13:34:49.711 ServerApp] The port 8888 is already in use, trying another port.
+[I 2022-01-23 13:34:49.712 ServerApp] Serving notebooks from local directory: /Users/chaitanyaambarukhana/mine/projects/tomatodisease
+[I 2022-01-23 13:34:49.712 ServerApp] Jupyter Server 1.13.1 is running at:
+[I 2022-01-23 13:34:49.712 ServerApp] http://localhost:8889/lab?token=91505a951147359fe6179937006b3f19db8da9e82c4e18ac
+[I 2022-01-23 13:34:49.712 ServerApp]  or http://127.0.0.1:8889/lab?token=91505a951147359fe6179937006b3f19db8da9e82c4e18ac
+[I 2022-01-23 13:34:49.712 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2022-01-23 13:34:49.716 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///Users/chaitanyaambarukhana/Library/Jupyter/runtime/jpserver-86342-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/lab?token=91505a951147359fe6179937006b3f19db8da9e82c4e18ac
+     or http://127.0.0.1:8889/lab?token=91505a951147359fe6179937006b3f19db8da9e82c4e18ac
+[I 2022-01-23 13:34:52.720 LabApp] Build is up to date
+[W 2022-01-23 13:34:52.833 ServerApp] 404 GET /api/contents/implemetingKeras.ipynb?content=0&1642962892821 (::1): No such file or directory: implemetingKeras.ipynb
+[W 2022-01-23 13:34:52.833 ServerApp] No such file or directory: implemetingKeras.ipynb
+[W 2022-01-23 13:34:52.833 ServerApp] 404 GET /api/contents/implemetingKeras.ipynb?content=0&1642962892821 (::1) 2.73ms referer=http://localhost:8889/lab
+-\|/-\|/-\|/-\|/-\|/-\|[W 2022-01-23 13:34:56.486 ServerApp] Notebook code.ipynb is not trusted
+/-[I 2022-01-23 13:34:56.620 ServerApp] Kernel started: 021c29c4-dc51-49b4-8d94-088100fed621
+\|/-\|/-ERROR:pygls.protocol:Failed to handle request 182 textDocument/documentHighlight partial_result_token=None work_done_token=None text_document=TextDocumentIdentifier(uri='file:///Users/chaitanyaambarukhana/mine/projects/tomatodisease/.virtual_documents/code.ipynb') position=5:6
+Traceback (most recent call last):
+  File "/Users/chaitanyaambarukhana/miniforge3/envs/tensorflow/lib/python3.9/site-packages/pygls/protocol.py", line 331, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/Users/chaitanyaambarukhana/miniforge3/envs/tensorflow/lib/python3.9/site-packages/pygls/protocol.py", line 260, in _execute_request
+    method_name, method_type, msg_id, handler(params))
+  File "/Users/chaitanyaambarukhana/miniforge3/envs/tensorflow/lib/python3.9/site-packages/jedi_language_server/server.py", line 329, in highlight
+    names = jedi_script.get_references(*jedi_lines, scope="file")
+  File "/Users/chaitanyaambarukhana/miniforge3/envs/tensorflow/lib/python3.9/site-packages/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (6) is not in a valid range (0-5) for line 6 ('datat\n').
+[I 2022-01-23 13:36:56.562 ServerApp] Saving file at /code.ipynb
+2022-01-23 13:37:19.092864: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+Metal device set to: Apple M1
+2022-01-23 13:37:19.093411: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+[I 2022-01-23 13:38:56.602 ServerApp] Saving file at /code.ipynb
+2022-01-23 13:38:59.629239: W tensorflow/core/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
+[I 2022-01-23 13:40:56.669 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 13:42:57.133 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 13:44:57.181 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 13:46:57.252 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 13:48:58.026 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 13:55:22.890 ServerApp] Starting buffering for 021c29c4-dc51-49b4-8d94-088100fed621:24a86fa3-8984-47d3-ba84-f44ed04a355f
+[I 2022-01-23 13:59:25.022 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:25.098 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:25.976 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:26.819 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:27.056 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:27.230 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:27.391 ServerApp] Saving file at /code.ipynb
+[I 2022-01-23 14:01:27.546 ServerApp] Saving file at /code.ipynb
+[C 2022-01-23 14:01:56.412 ServerApp] received signal 15, stopping
+[I 2022-01-23 14:01:56.414 ServerApp] Shutting down 3 extensions
+[I 2022-01-23 14:01:56.415 ServerApp] Shutting down 1 kernel
+[I 2022-01-23 14:01:56.415 ServerApp] Kernel shutdown: 021c29c4-dc51-49b4-8d94-088100fed621
+[I 2022-01-23 14:01:59.031 ServerApp] Shutting down 0 terminals
